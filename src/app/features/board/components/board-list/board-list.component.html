@@ -1,1 +1,8 @@
-<p>board-list works!</p>
+<div>
+    <h2>Tableros</h2>
+    <input [(ngModel)] = "newBoardTitle" placeholder="Nuevo tablero" />
+    <button (click)="addBoard()">Añadir</button>
+    <ul>
+        <li *ngFor="let board of boards"><a [routerLink]="['/board', 'board.id']">{{board.name}}</a></li>
+    </ul>
+</div>
