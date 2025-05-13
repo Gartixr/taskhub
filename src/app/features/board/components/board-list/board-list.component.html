@@ -3,6 +3,6 @@
     <input [(ngModel)] = "newBoardTitle" placeholder="Nuevo tablero" />
     <button (click)="addBoard()">Añadir</button>
     <ul>
-        <li *ngFor="let board of boards"><a [routerLink]="['/board', 'board.id']">{{board.name}}</a></li>
+        <li *ngFor="let board of boards"><a [routerLink]="['/board', board.id]">{{board.name}}</a></li>
     </ul>
 </div>

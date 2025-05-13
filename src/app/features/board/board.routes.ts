@@ -4,6 +4,6 @@ import { BoardDetailComponent } from './components/board-detail/board-detail.com
 
 export const BOARD_ROUTES: Routes = [
   { path: '', component: BoardListComponent },
-  { path: 'board/:id', component: BoardDetailComponent },
+  { path: ':id', component: BoardDetailComponent },
   { path: '**', redirectTo: '' }
 ];

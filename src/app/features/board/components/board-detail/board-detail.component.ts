@@ -14,6 +14,7 @@ export class BoardDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.boardId = this.route.snapshot.paramMap.get('id')!;
+    console.log('Board ID:', this.boardId);
   }
 
 }
